@@ -2,19 +2,34 @@
  * Created by mave on 19/06/2017.
  */
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 
 
 public class Sort_Tester {
 
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
         long start;
         long end;
         long elapsedTime;
 
         java.util.Random random = new java.util.Random();
+        FileWriter fileWriter = new FileWriter("Sort_tester.csv");
+
+        fileWriter.append("Array length");
+        fileWriter.append(", ");
+        fileWriter.append("Bubble Sort");
+        fileWriter.append(", ");
+        fileWriter.append("Insertion Sort");
+        fileWriter.append(", ");
+        fileWriter.append("Merge Sort");
+        fileWriter.append(", ");
+        fileWriter.append("Quick Sort");
+        fileWriter.append("\n");
+
+
 
         int [] arr = new int [100000];
 
@@ -23,33 +38,47 @@ public class Sort_Tester {
         }
 
 
+        int[] bubbleSortArray = arr.clone();
+        int[] insertionSortArray = arr.clone();
+        int[] mergeSortArray = arr.clone();
+
         Sort x = new Sort();
 
         start = System.nanoTime();
         x.BubbleSort(arr);
-
         end = System.nanoTime();
         elapsedTime = end - start;
-        System.out.println("The process took approximately: " + elapsedTime/10000000 + " miliseconds");
+        printArray(bubbleSortArray);
+        System.out.println("Bubble sort took approximately: " + elapsedTime/10000000 + " miliseconds");
+        fileWriter.append("Bubble Sort took approximately: " + elapsedTime/10000000 + " miliseconds");
 
-        // x.BubbleSort(arr);
+        start = System.nanoTime();
+        x.insertionSort(insertionSortArray);
+        end = System.nanoTime();
+        elapsedTime = end - start;
+        printArray(insertionSortArray);
+        System.out.println("Insertion sort took approximately: " + elapsedTime/10000000 + " miliseconds");
+        fileWriter.append("\n");
+        fileWriter.append("Insertion Sort took approximately: " + elapsedTime/10000000 + " miliseconds");
 
-        // x.insertionSort(arr);
+        start = System.nanoTime();
+        x.mergSort(mergeSortArray, 0, mergeSortArray.length);
+        end = System.nanoTime();
+        elapsedTime = end - start;
+        printArray(mergeSortArray);
+        System.out.println("Merge sort took approximately: " + elapsedTime/10000000 + " miliseconds");
+        fileWriter.append("\n");
+        fileWriter.append("Merge Sort took approximately: " + elapsedTime/10000000 + " miliseconds");
 
-        // x.mergSort(arr, 0, 100000);
 
-        printArray(arr);
-
+        fileWriter.flush();
+        fileWriter.close();
 
     }
 
-    static void printArray(int a[])
-    {   // prints the array
+    static void printArray(int a[]) {   // prints the array
 
-        for(int i=0; i<a.length;i++)
+        for (int i = 0; i < a.length; i++)
             System.out.println(a[i]);
-
     }
-
-
 }
