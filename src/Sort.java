@@ -72,5 +72,33 @@ public class Sort {
         for (int k = 0; k < N; k++)
             a[low + k] = temp[k];
     }
+
+    public void quickSort(int[] numbers, int low, int high, Sort sorter) {
+        int i = low, j = high;
+        int pivot = numbers[low + (high - low) / 2];
+
+        while (i <= j) {
+
+            while (numbers[i] < pivot) {
+                i++;
+            }
+
+            while (numbers[j] > pivot) {
+                j--;
+            }
+
+            if (i <= j) {
+                int temp = numbers[i];
+                numbers[i] = numbers[j];
+                numbers[j] = temp;
+                i++;
+                j--;
+            }
+        }
+        if (low < j)
+            sorter.quickSort(numbers, low, j, sorter);
+        if (i < high)
+            sorter.quickSort(numbers, i, high, sorter);
+    }
 }
 

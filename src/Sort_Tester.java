@@ -41,6 +41,7 @@ public class Sort_Tester {
         int[] bubbleSortArray = arr.clone();
         int[] insertionSortArray = arr.clone();
         int[] mergeSortArray = arr.clone();
+        int[] quickSortArray = arr.clone();
 
         Sort x = new Sort();
 
@@ -62,13 +63,22 @@ public class Sort_Tester {
         fileWriter.append("Insertion Sort took approximately: " + elapsedTime/10000000 + " miliseconds");
 
         start = System.nanoTime();
-        x.mergSort(mergeSortArray, 0, mergeSortArray.length);
+        x.mergSort(mergeSortArray, 0, mergeSortArray.length - 1);
         end = System.nanoTime();
         elapsedTime = end - start;
         printArray(mergeSortArray);
         System.out.println("Merge sort took approximately: " + elapsedTime/10000000 + " miliseconds");
         fileWriter.append("\n");
         fileWriter.append("Merge Sort took approximately: " + elapsedTime/10000000 + " miliseconds");
+
+        start = System.nanoTime();
+        x.quickSort(quickSortArray, 0, quickSortArray.length - 1, x);
+        end = System.nanoTime();
+        elapsedTime = end - start;
+        printArray(quickSortArray);
+        System.out.println("Quick sort took approximately: " + elapsedTime/10000000 + " miliseconds");
+        fileWriter.append("\n");
+        fileWriter.append("Quick sort took approximately: " + elapsedTime/10000000 + " miliseconds");
 
 
         fileWriter.flush();
