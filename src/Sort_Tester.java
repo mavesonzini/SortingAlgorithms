@@ -1,21 +1,36 @@
 /**
  * Created by mave on 19/06/2017.
  */
-public class Sort_Tester {
 
+import java.util.Random;
+
+
+public class Sort_Tester {
 
 
     public static void main(String[] args)
     {
+        long start;
+        long end;
+        long elapsedTime;
+
+        java.util.Random random = new java.util.Random();
 
         int [] arr = new int [100000];
 
-
-        // generate random number and put them in the array here ...
+        for (int i = 0; i < 100000; i++){
+            arr[i] = random.nextInt(50);
+        }
 
 
         Sort x = new Sort();
 
+        start = System.nanoTime();
+        x.BubbleSort(arr);
+
+        end = System.nanoTime();
+        elapsedTime = end - start;
+        System.out.println("The process took approximately: " + elapsedTime/10000000 + " miliseconds");
 
         // x.BubbleSort(arr);
 
