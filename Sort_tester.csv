@@ -1,5 +1,79 @@
-Array length, Bubble Sort, Insertion Sort, Merge Sort, Quick Sort
-Bubble Sort took approximately: 2067 miliseconds
-Insertion Sort took approximately: 175 miliseconds
-Merge Sort took approximately: 4 miliseconds
-Quick sort took approximately: 3 miliseconds
+Bubble Sort took approximately: 6 miliseconds with 1000
+Insertion Sort took approximately: 3 miliseconds with 1000
+Merge Sort took approximately: 1 miliseconds with 1000
+Quick sort took approximately: 0 miliseconds with 1000
+
+Bubble Sort took approximately: 289 miliseconds with 11000
+Insertion Sort took approximately: 24 miliseconds with 11000
+Merge Sort took approximately: 1 miliseconds with 11000
+Quick sort took approximately: 1 miliseconds with 11000
+
+Bubble Sort took approximately: 722 miliseconds with 21000
+Insertion Sort took approximately: 83 miliseconds with 21000
+Merge Sort took approximately: 2 miliseconds with 21000
+Quick sort took approximately: 2 miliseconds with 21000
+
+Bubble Sort took approximately: 1488 miliseconds with 31000
+Insertion Sort took approximately: 410 miliseconds with 31000
+Merge Sort took approximately: 4 miliseconds with 31000
+Quick sort took approximately: 2 miliseconds with 31000
+
+Bubble Sort took approximately: 2539 miliseconds with 41000
+Insertion Sort took approximately: 701 miliseconds with 41000
+Merge Sort took approximately: 4 miliseconds with 41000
+Quick sort took approximately: 2 miliseconds with 41000
+
+Bubble Sort took approximately: 4100 miliseconds with 51000
+Insertion Sort took approximately: 1105 miliseconds with 51000
+Merge Sort took approximately: 5 miliseconds with 51000
+Quick sort took approximately: 2 miliseconds with 51000
+
+Bubble Sort took approximately: 5839 miliseconds with 61000
+Insertion Sort took approximately: 1542 miliseconds with 61000
+Merge Sort took approximately: 6 miliseconds with 61000
+Quick sort took approximately: 3 miliseconds with 61000
+
+Bubble Sort took approximately: 7653 miliseconds with 71000
+Insertion Sort took approximately: 2024 miliseconds with 71000
+Merge Sort took approximately: 7 miliseconds with 71000
+Quick sort took approximately: 4 miliseconds with 71000
+
+Bubble Sort took approximately: 10572 miliseconds with 81000
+Insertion Sort took approximately: 2829 miliseconds with 81000
+Merge Sort took approximately: 8 miliseconds with 81000
+Quick sort took approximately: 5 miliseconds with 81000
+
+Bubble Sort took approximately: 12613 miliseconds with 91000
+Insertion Sort took approximately: 3317 miliseconds with 91000
+Merge Sort took approximately: 9 miliseconds with 91000
+Quick sort took approximately: 7 miliseconds with 91000
+
+Bubble Sort took approximately: 15400 miliseconds with 101000
+Insertion Sort took approximately: 4333 miliseconds with 101000
+Merge Sort took approximately: 21 miliseconds with 101000
+Quick sort took approximately: 5 miliseconds with 101000
+
+Bubble Sort took approximately: 18593 miliseconds with 111000
+Insertion Sort took approximately: 4950 miliseconds with 111000
+Merge Sort took approximately: 12 miliseconds with 111000
+Quick sort took approximately: 6 miliseconds with 111000
+
+Bubble Sort took approximately: 22368 miliseconds with 121000
+Insertion Sort took approximately: 5906 miliseconds with 121000
+Merge Sort took approximately: 14 miliseconds with 121000
+Quick sort took approximately: 7 miliseconds with 121000
+
+Bubble Sort took approximately: 25698 miliseconds with 131000
+Insertion Sort took approximately: 6875 miliseconds with 131000
+Merge Sort took approximately: 15 miliseconds with 131000
+Quick sort took approximately: 7 miliseconds with 131000
+
+Bubble Sort took approximately: 29697 miliseconds with 141000
+Insertion Sort took approximately: 8005 miliseconds with 141000
+Merge Sort took approximately: 20 miliseconds with 141000
+Quick sort took approximately: 15 miliseconds with 141000
+
+Bubble Sort took approximately: 34047 miliseconds with 151000
+Insertion Sort took approximately: 9128 miliseconds with 151000
+Merge Sort took approximately: 18 miliseconds with 151000
+Quick sort took approximately: 9 miliseconds with 151000
